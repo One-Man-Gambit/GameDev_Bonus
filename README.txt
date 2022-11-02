@@ -27,12 +27,12 @@ Cody Jensen
 	initial state.  Whenever an object is interacted with by the player and destroyed, it sends out its own signal to the GameManager to
 	tell it to award the player 100 points. These delegates benefit the game by allowing any class to send out its own signal in order to
 	trigger events within the game.
-12. Is the command Desgin pattern properly explained?
-13. Is the flowchart properly presented and consistent with the explanation?
-14. Is the executable file uploaded as a release? 
+12. Is the command Desgin pattern properly explained? No
+13. Is the flowchart properly presented and consistent with the explanation? No
+14. Is the executable file uploaded as a release? YES
 15. Are the instructions provided in the repository? Yes
 	Controls: 
 	'A' and 'D' or 'Left Arrow' and 'Right Arrow' to move left and right
 	'W' and 'S' or 'Up Arrow' and 'Down Arrow' to move up and down (only when on a ladder)
 	'E' to interact with an object (Destructibles and Bombs)
-16. Is the project uploaded to the repo and working? 
+16. Is the project uploaded to the repo and working? YES
