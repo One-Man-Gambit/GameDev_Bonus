@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour
 
         // Set our Observer Functions
         OnPlayerKilled += Reset;
-        OnObjectDestroyed += OnObjectDestroyed;
+        OnObjectDestroyed += GainPoints;
     }
 
     // -- Variables --
@@ -35,6 +36,7 @@ public class GameManager : MonoBehaviour
     public Player_Controller pcRef;
     public Transform SpawnPoint;
     public List<Destructible> destructibleRefList;
+    public Text scoreDisplay;
     
 
     // -- Functions --
@@ -45,10 +47,14 @@ public class GameManager : MonoBehaviour
         {
             d.Reset();
         }
+
+        Score = 0;
+        scoreDisplay.text = "Score: " + Score;
     }
 
     private void GainPoints() 
     {
         Score += 100;
+        scoreDisplay.text = "Score: " + Score;
     }
 }
